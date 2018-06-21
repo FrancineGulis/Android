@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.francine.cores.MainActivity">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Vermelho"
+        android:id ="@+id/redTextView"/>
+
+    <SeekBar
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:max="250"
+        android:id="@+id/redSeekBar"
+        android:layout_below="@+id/redTextView"
+        android:paddingBottom="5dp"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Verde"
+        android:id ="@+id/greenTextView"
+        android:layout_below="@+id/redSeekBar"/>
+
+    <SeekBar
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:max="250"
+        android:id="@+id/greenSeekBar"
+        android:layout_below="@+id/greenTextView"
+        android:paddingBottom="5dp"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Azul"
+        android:id ="@+id/blueTextView"
+        android:layout_below="@+id/greenSeekBar"/>
+
+    <SeekBar
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:max="250"
+        android:id="@+id/blueSeekBar"
+        android:layout_below="@+id/blueTextView"
+        android:paddingBottom="5dp"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/selectedColor"
+        android:layout_below="@id/blueSeekBar"
+        android:paddingTop="10dp"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/color"
+        android:layout_below="@+id/selectedColor"/>
+
+</android.widget.RelativeLayout>

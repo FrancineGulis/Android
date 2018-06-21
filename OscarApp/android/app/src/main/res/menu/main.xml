@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/votarF"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:title="Votar Filme"
+        />
+
+    <item
+        android:id="@+id/votarD"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:title="Votar Diretor"
+        />
+
+    <item
+        android:id="@+id/confirmar"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:title="Confirmar Voto"
+        />
+
+    <item
+        android:id="@+id/sair"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:title="Sair"
+        />
+
+</menu>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.francine.primeiroapp.MainActivity">
+
+    <EditText
+        android:id="@+id/num1"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="16dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/bSum" />
+
+    <Button
+        android:id="@+id/bSum"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:onClick="operacao"
+        android:text="+"
+        tools:layout_editor_absoluteX="121dp"
+        tools:layout_editor_absoluteY="93dp"
+        android:layout_alignBaseline="@+id/bSub"
+        android:layout_alignBottom="@+id/bSub"
+        android:layout_toStartOf="@+id/output" />
+
+    <EditText
+        android:id="@+id/num2"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="214dp"
+        tools:layout_editor_absoluteY="16dp"
+        android:layout_marginEnd="31dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/output"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        tools:layout_editor_absoluteX="155dp"
+        tools:layout_editor_absoluteY="183dp"
+        android:layout_marginTop="62dp"
+        android:layout_below="@+id/bSub"
+        android:layout_toStartOf="@+id/bSub" />
+
+    <Button
+        android:id="@+id/bSub"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:onClick="operacao"
+        android:text="-"
+        tools:layout_editor_absoluteX="214dp"
+        tools:layout_editor_absoluteY="93dp"
+        android:layout_marginTop="71dp"
+        android:layout_below="@+id/num2"
+        android:layout_alignStart="@+id/num2" />
+</android.widget.RelativeLayout>
